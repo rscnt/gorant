@@ -5,17 +5,11 @@
 package bogosort
 
 import (
-	"fmt"
 	"math/rand"
 )
 
 // Bogosort sorts an integer array in ascending order, the array passed
 // must not be a null reference.
-
-func main() {
-	arr := []int{3, 2, 1}
-	fmt.Println(Bogosort(arr))
-}
 
 func shuffle(src []int) []int {
 	dest := make([]int, len(src))
